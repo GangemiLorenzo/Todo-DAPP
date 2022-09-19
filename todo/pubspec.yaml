@@ -1,0 +1,40 @@
+name: todo
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^1.0.4
+  flutter_dotenv: ^5.0.2
+  web3dart: 
+    git: https://github.com/GangemiLorenzo/web3dart
+  http: ^0.13.5
+  walletconnect_dart: ^0.0.11
+  walletconnect_secure_storage: ^1.0.0
+  url_launcher: ^6.1.5
+  injectable: ^1.5.3
+  flutter_svg: ^1.1.4
+  flex_color_picker: ^2.5.0
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
+  json_serializable: ^6.3.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+    - lib/artifacts/
